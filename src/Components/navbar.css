@@ -186,24 +186,13 @@
     margin-left: 5px;
 }
 
-.modalBackground{
-    position: absolute;
-    width: 425px;
-    height: 425px;
-    left: 410px;
-    top:120px;
-    background: #262626;
-    border-radius: 3px;
-    
-}
-
 .modalTitle{
-   margin-left: 100px;
+   margin-left: 120px;
 }
 
 .modal-btn{
-    margin-left: 100px;
-    width: 44%;
+    margin-left: 120px;
+    width: 39.5%;
     height: 60%;
     border: none;
     padding: 4px;
@@ -215,16 +204,4 @@
 
 .modalClosed{
     text-align: right;
-  
-}
-
-.modalClosed button{
-    background: transparent;
-    outline: none;
-    border: none;
-    color: #fff;
-    padding:10px;
-    margin-right: 10px;
-    font-size: 20px ;
-  
 }

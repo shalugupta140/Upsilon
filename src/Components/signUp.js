@@ -7,6 +7,24 @@ import { FcGoogle } from 'react-icons/fc'
 import { NavLink } from "react-router-dom";
 
 const SignUp = () => {
+
+    const [values, setValues] = React.useState({
+        password: "",
+        showPassword: false,
+      });
+      
+      const handleClickShowPassword = () => {
+        setValues({ ...values, showPassword: !values.showPassword });
+      };
+      
+      const handleMouseDownPassword = (event) => {
+        event.preventDefault();
+      };
+      
+      const handlePasswordChange = (prop) => (event) => {
+        setValues({ ...values, [prop]: event.target.value });
+      };
+
     return (
         <>
             <div className="main-container">
@@ -63,11 +81,10 @@ const SignUp = () => {
                                          <BsInstagram/>
                                          </div>
                                          </div>
-
                                          <div className="d-flex">
                                          <NavLink style={{color:"#fff", textDecoration:"none", letterSpacing:"0.05em",marginLeft:"168px"}}  to="#">Already a member</NavLink>
 
-                                         <NavLink style={{color:"#FF19A3", textDecoration:"none", letterSpacing:"0.05em"}}to="/sign_in"> ? Sign in</NavLink>
+                                         <NavLink style={{color:"#FF19A3", textDecoration:"none", letterSpacing:"0.05em"}}to="/signIn"> ? Sign in</NavLink>
                                          </div>
                                        
 
